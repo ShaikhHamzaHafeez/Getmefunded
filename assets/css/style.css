@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Times New Roman';
+    src: url(../fonts/TimesNewRoman/timesnewroman.ttf);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -9,7 +14,7 @@
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     /* background-color: rgba(0,0,0,0.5); */
 
-/* transform: matrix(-1, 0, 0, 1, 0, 0); */
+    /* transform: matrix(-1, 0, 0, 1, 0, 0); */
 }
 
 #HeaderNav nav {
@@ -27,14 +32,47 @@
     top: 40%;
     left: 15%;
 }
-#HeaderNav #hero h1{
+
+#HeaderNav #hero h1 {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 69px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+}
+
+#HeaderNav #hero h1 span {
+    color: #A6F340;
+}
+
+#HeaderNav #hero p {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 33px;
+    text-transform: capitalize;
+    color: #FFFFFF;
 
 }
-#HeaderNav #hero p{
 
-}
-#HeaderNav #hero button{
-    
+#HeaderNav #hero button {
+    background: linear-gradient(94.15deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
+    padding: 25px 40px;
+    border-radius: 5px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
 }
 
 #HeaderNav {}
