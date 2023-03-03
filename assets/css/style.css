@@ -25,6 +25,7 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 
 #HeaderNav #hero {
@@ -114,17 +115,17 @@
 
 #HeroForm p {
     font-family: 'Source Sans Pro';
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 20px;
-text-transform: capitalize;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 
 }
 
-#HeroForm .row label{
+#HeroForm .row label {
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 600;
@@ -134,45 +135,47 @@ color: #FFFFFF;
     color: #FFFFFF;
 }
 
-#HeroForm .row input{
+#HeroForm .row input {
     border: 1px solid #FFFFFF;
-border-radius: 5px;
-background-color: transparent ;
-padding: 15px;
-color: #FFFFFF;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 15px;
+    color: #FFFFFF;
 
 }
 
-#HeroForm input::placeholder{
+#HeroForm input::placeholder {
     font-family: 'Source Sans Pro';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 23px;
-text-transform: capitalize;
-color: #FFFFFF;
-opacity: 0.5;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    opacity: 0.5;
 }
 
-#HeroForm button{
+#HeroForm button {
     border: 1px solid #FFFFFF;
-border-radius: 5px;
-font-family: 'Source Sans Pro';
-font-style: normal;
-font-weight: 600;
-font-size: 20px;
-line-height: 25px;
-text-align: center;
-text-transform: uppercase;
-color: #FFFFFF;
-width: 95%;
-margin: 15px auto;
-padding: 15px;
+    border-radius: 5px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 95%;
+    margin: 15px auto;
+    padding: 15px;
 }
-#Howitworks{
-padding: 5rem 0;
+
+#Howitworks {
+    padding: 5rem 0;
 }
-#Howitworks h2{
+
+#Howitworks h2 {
     font-family: 'Times New Roman';
     font-style: normal;
     font-weight: 700;
@@ -182,7 +185,8 @@ padding: 5rem 0;
     text-transform: capitalize;
     color: #011F3B;
 }
-#Howitworks h2::after{
+
+#Howitworks h2::after {
     content: "";
     width: 210px;
     height: 2px;
@@ -191,12 +195,13 @@ padding: 5rem 0;
     background-color: #A6F340;
 }
 
-#Howitworks .col-md-4>div{
+#Howitworks .col-md-4>div {
     width: 65%;
     margin: auto;
 
 }
-#Howitworks .col-md-4>div h3::before{
+
+#Howitworks .col-md-4>div h3::before {
     content: "";
     width: 185px;
     height: 1px;
@@ -205,7 +210,7 @@ padding: 5rem 0;
     background-color: #A6F340;
 }
 
-#Howitworks .col-md-4>div h3{
+#Howitworks .col-md-4>div h3 {
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 700;
@@ -217,7 +222,8 @@ padding: 5rem 0;
     margin-top: 10px;
 
 }
-#Howitworks .col-md-4>div p{
+
+#Howitworks .col-md-4>div p {
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 300;
@@ -227,10 +233,12 @@ padding: 5rem 0;
     text-transform: capitalize;
     color: #000000;
 }
-#Howitworks .applyNowBtn{
+
+#Howitworks .applyNowBtn {
     padding: 2rem 0 0 0;
 }
-#Howitworks .applyNowBtn a{
+
+#Howitworks .applyNowBtn a {
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 600;
@@ -241,14 +249,141 @@ padding: 5rem 0;
     color: #011F3B;
     text-decoration: none;
 }
-#Howitworks .applyNowBtn a i{
+
+#Howitworks .applyNowBtn a i {
     color: #A6F340;
     font-size: x-large;
     vertical-align: middle;
 }
-/* #Howitworks span{
-    border: 1px solid #A6F340;
-    width: 20%;
-    position: relative;
-    left: 40%;
-} */
+
+#Rightloan {
+    background-image: url('../img/Right Loan BG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#Rightloan h2 {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+
+}
+
+#Rightloan h2::after {
+    content: "";
+    width: 45%;
+    height: 2px;
+    margin: 15px auto;
+    display: block;
+    background-color: #A6F340;
+}
+
+#Rightloan {
+    padding: 5rem 0;
+}
+
+#Rightloan .col-md-12 p {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    padding: 1rem 10rem;
+
+}
+
+#Rightloan .col-md-4 p {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+
+#Rightloan .col-md-4 h4 {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+
+}
+
+#Rightloan .col-md-4>div {
+    background: linear-gradient(142.1deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
+    box-shadow: 0px 0px 25px -5px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 45px 30px;
+    margin: 20px 10px;
+
+
+}
+
+#Rightloan .col-md-4 h4::after {
+    content: "";
+    width: 45%;
+    height: 2px;
+    margin: 15px auto;
+    display: block;
+    background-color: #ffffff;
+}
+
+#Peoplesays {
+    background-image: url('../img/what people say.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0;
+
+}
+
+#Peoplesays h2 {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+
+}
+
+#Peoplesays h2::after {
+    content: "";
+    width: 45%;
+    height: 2px;
+    margin: 15px auto;
+    display: block;
+    background-color: #A6F340;
+}
+
+#Peoplesays p {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+
+}
