@@ -59,7 +59,7 @@
 
 }
 
-#HeaderNav #hero button {
+#HeaderNav #hero .discoverBtn {
     background: linear-gradient(94.15deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%);
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(20px);
@@ -90,3 +90,165 @@
         width: 100%;
     }
 }
+
+#HeroForm {
+    background: linear-gradient(142.1deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
+    box-shadow: 0px 0px 25px -5px rgb(0 0 0 / 25%);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    padding: 25px 45px;
+
+
+}
+
+#HeroForm h4 {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 45px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+
+}
+
+#HeroForm p {
+    font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 20px;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+}
+
+#HeroForm .row label{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+#HeroForm .row input{
+    border: 1px solid #FFFFFF;
+border-radius: 5px;
+background-color: transparent ;
+padding: 15px;
+color: #FFFFFF;
+
+}
+
+#HeroForm input::placeholder{
+    font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+text-transform: capitalize;
+color: #FFFFFF;
+opacity: 0.5;
+}
+
+#HeroForm button{
+    border: 1px solid #FFFFFF;
+border-radius: 5px;
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 25px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+width: 95%;
+margin: 15px auto;
+padding: 15px;
+}
+#Howitworks{
+padding: 5rem 0;
+}
+#Howitworks h2{
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #011F3B;
+}
+#Howitworks h2::after{
+    content: "";
+    width: 210px;
+    height: 2px;
+    margin: 15px auto;
+    display: block;
+    background-color: #A6F340;
+}
+
+#Howitworks .col-md-4>div{
+    width: 65%;
+    margin: auto;
+
+}
+#Howitworks .col-md-4>div h3::before{
+    content: "";
+    width: 185px;
+    height: 1px;
+    margin: 30px auto 10px auto;
+    display: block;
+    background-color: #A6F340;
+}
+
+#Howitworks .col-md-4>div h3{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 33px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #011F3B;
+    margin-top: 10px;
+
+}
+#Howitworks .col-md-4>div p{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+}
+#Howitworks .applyNowBtn{
+    padding: 2rem 0 0 0;
+}
+#Howitworks .applyNowBtn a{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #011F3B;
+    text-decoration: none;
+}
+#Howitworks .applyNowBtn a i{
+    color: #A6F340;
+    font-size: x-large;
+    vertical-align: middle;
+}
+/* #Howitworks span{
+    border: 1px solid #A6F340;
+    width: 20%;
+    position: relative;
+    left: 40%;
+} */
