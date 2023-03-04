@@ -387,3 +387,183 @@
     color: #FFFFFF;
 
 }
+
+#Peoplesays .col-md-4 .card {
+    background: linear-gradient(142.1deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
+    box-shadow: 0px 0px 25px -5px rgb(0 0 0 / 25%);
+    backdrop-filter: blur(2px);
+    border-radius: 16px;
+    width: auto !important;
+
+
+
+
+}
+
+#Peoplesays .col-md-4>div {
+    background-image: url('../img/Quote.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    margin-top: 6rem;
+    margin-right: 1rem;
+
+}
+
+#Peoplesays .col-md-4 .card img.card-img-top {
+    width: 20%;
+    margin-top: -2.5rem;
+    margin-left: 9%;
+
+}
+
+#Peoplesays .col-md-4 .card .card-body p {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: justify;
+    color: #A6F340;
+}
+
+#Peoplesays .col-md-4 .card .card-body p span {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: justify;
+    color: #FFFFFF;
+
+}
+
+#Peoplesays .col-md-4 .card .card-text {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    padding: 15px;
+
+}
+
+#Team {
+    padding: 5rem 0;
+
+}
+
+#Team h2 {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 3rem;
+    color: #011F3B;
+}
+
+#Team h2::after {
+    content: "";
+    width: 17%;
+    height: 2px;
+    margin: 15px auto;
+    display: block;
+    background-color: #A6F340;
+}
+
+#Team .slick-arrow {
+    display: none !important;
+}
+
+#LOgoTeam {
+    width: 85%;
+    margin: auto;
+}
+
+#counter {
+    background: linear-gradient(92.96deg, #011F3B 20.83%, #A6F340 100%);
+    background-repeat: no-repeat;
+    padding: 5rem 0;
+    /* height: 45vh; */
+}
+
+#counter h2 {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 63px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+
+}
+
+#counter p {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    opacity: 0.75;
+}
+
+#counter #counterSec .col-md-4>div{
+    background: linear-gradient(142.1deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
+    box-shadow: 0px 0px 25px -5px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 35px;
+    margin: 50px 0;
+
+
+}
+
+#counter #counterSec h4 {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: 10px 0;
+
+}
+
+#counter #counterSec p {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    opacity: 0.75;
+
+}
+
+#counter #counterSec button {
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-top: 8px;
+
+}
+
+#counter #counterSec {}
