@@ -15,6 +15,11 @@
     /* background-color: rgba(0,0,0,0.5); */
 
     /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+    background-image: url(../img/Rectangle\ 6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 256px;
+    padding-bottom: 88px;
 }
 
 #HeaderNav nav {
@@ -26,12 +31,64 @@
     left: 0;
     right: 0;
     z-index: 1;
+    padding: 17px 101px;
+    width: 100%;
+}
+#HeaderNav nav .call-flex{
+    display: flex;
+    margin-right: 109px;
+}
+#HeaderNav nav .call-flex p{
+    margin-bottom: 0;
+}
+#HeaderNav nav .call-flex :nth-child(1){
+    color: white;
+}
+#HeaderNav nav .call-flex :nth-child(2){
+    color: #A6F340;
+}
+#HeaderNav nav .call-flex i.bi-telephone-minus{
+    color: #A6F340;
+    font-size: 29px;
+    padding-right: 19px;
+}
+#HeaderNav nav .btn-login{
+    background-color: #A6F340;
+    border-radius: 9px;
+}
+#HeaderNav nav .btn-login a button{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    padding: 7px 26px;
+}
+#HeaderNav nav .nav-item .nav-link{
+color: white;
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+}
+#HeaderNav nav .nav-item{
+    padding-right: 21px;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+    border-bottom: 4px solid #A6F340;
 }
 
+
 #HeaderNav #hero {
-    position: absolute;
-    top: 40%;
-    left: 15%;
+    /* position: absolute;
+    top: 40%; */
+    /* left: 15%; */
+}
+#HeaderNav .row{
+    /* padding: 0px 108px; */
+}
+#HeaderNav #hero .para-one{
+    padding: 0px 213px 0px 112px;
 }
 
 #HeaderNav #hero h1 {
@@ -75,6 +132,9 @@
     color: #FFFFFF;
 
 }
+#HeaderNav #hero .discoverBtn:hover{
+    color: #A6F340;
+}
 
 #HeaderNav {}
 
@@ -98,8 +158,8 @@
     backdrop-filter: blur(20px);
     border-radius: 15px;
     padding: 25px 45px;
-
-
+    width: 85%;
+    margin-top: -75px;
 }
 
 #HeroForm h4 {
@@ -286,9 +346,8 @@
 }
 
 #Rightloan {
-    padding: 5rem 0;
+    padding: 62px 131px;
 }
-
 #Rightloan .col-md-12 p {
     font-family: 'Source Sans Pro';
     font-style: normal;
@@ -323,7 +382,9 @@
     text-align: center;
     text-transform: capitalize;
     color: #FFFFFF;
-
+}
+#Rightloan .col-md-4 h4:hover{
+    color: #A6F340;
 }
 
 #Rightloan .col-md-4>div {
@@ -332,7 +393,7 @@
     backdrop-filter: blur(20px);
     border-radius: 10px;
     padding: 45px 30px;
-    margin: 20px 10px;
+    margin: 20px 28px;
 
 
 }
@@ -351,8 +412,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 5rem 0;
-
+    padding: 66px 133px;
 }
 
 #Peoplesays h2 {
@@ -392,7 +452,7 @@
     background: linear-gradient(142.1deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
     box-shadow: 0px 0px 25px -5px rgb(0 0 0 / 25%);
     backdrop-filter: blur(2px);
-    border-radius: 16px;
+    border-radius: 25px;
     width: auto !important;
 
 
@@ -486,7 +546,7 @@
 #counter {
     background: linear-gradient(92.96deg, #011F3B 20.83%, #A6F340 100%);
     background-repeat: no-repeat;
-    padding: 5rem 0;
+    padding: 0rem 0;
     /* height: 45vh; */
 }
 
@@ -563,13 +623,359 @@
     text-transform: capitalize;
     color: #FFFFFF;
     margin-top: 8px;
-
+}
+#counter #counterSec button:hover{
+color: #A6F340;
 }
 
 #counter #counterSec {}
 .Footer-Video{
     position: absolute;
-    /* right: 0; */
-    /* bottom: 0; */
     z-index: -1;
+    width: 100%;
+    height: auto;
 }
+#Footer{
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(ezgif.png); */
+    padding-top: 201px;
+    margin-top: -206px;
+    background-image: url(../img/Rectangle\ 39.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#Footer .footer-inner-div h5{
+    color: white;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    padding-bottom: 22px;
+}
+#Footer .footer-inner-div ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#Footer .footer-inner-div ul li{
+    padding-bottom: 14px;
+}
+#Footer .footer-inner-div ul li a{
+    text-decoration: none;
+    color: white;
+}
+.text-center{
+    padding-bottom: 59px;
+    padding-top: 50px;
+}
+#Footer .footer-inner-div ul li a i.bi-geo-alt{
+    font-size: 24px;
+    padding-right: 16px;
+}
+#Footer .footer-inner-div ul li a i.bi-envelope{
+    font-size: 24px;
+    padding-right: 16px;
+}
+#Footer #footer-div{
+    padding-left: 41px;
+}
+#Footer .first-div .footer-inner-div .icon{
+    text-align: end;
+}
+#Footer .first-div .footer-inner-div h5{
+    margin-left: -30px;
+    text-align: center;
+}
+#Footer .email-div{
+    text-align: end;
+}
+#Footer .email-div a{
+    color: white;
+    font-size: 24px;
+    padding-left: 23px;
+    position: relative;
+    bottom: 25px;
+}
+#Footer .input-div{
+   text-align: end; 
+   margin-top: 45px;
+}
+#Footer .input-div input{
+    padding: 14px 20px;
+    width: 56%;
+    border-radius: 29px;
+    border: 1px solid white;
+    background: transparent;
+}
+#Footer .input-div input::placeholder{
+    color: white;
+}
+#Footer button a{
+text-decoration: none;
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+color: #636466;
+}
+#Footer button{
+    padding: 10px 26px;
+    border-radius: 32px;
+    border: 1px solid white;
+}
+#Footer .btn-email{
+    text-align: end;
+    /* position: relative;
+    bottom: 50px;
+    left: -6px; */
+}
+#Footer .footer-btm p{
+color: white;
+}
+#Footer .footer-btm{
+    padding-top: 43px;
+}
+#Footer #footer-btm-one{
+text-align: center;
+}
+#Footer #footer-btm-two{
+    text-align: end;
+}
+#Footer .second-span{
+    padding-left: 39px;
+}
+#Footer .form-control {
+    padding: 10px 40px;
+    border-radius: 25px;
+    background: transparent;
+    border: 1px solid white;
+}
+#Footer .btn-submit {
+    float: right;
+    position: relative;
+    bottom: 41px;
+    right: 8px;
+    background-color: white;
+    border-radius: 25px;
+    padding: 6px 21px;
+    border: none;
+    color: #636466;
+}
+#Footer .email-input{
+    float: right;
+    width: 64%;
+    margin-top: 39px;
+}
+#Footer .email-input input::placeholder{
+color: white;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    #HeaderNav nav{
+        padding: 17px 11px;
+    }
+    #HeaderNav #hero .para-one {
+        padding: 0px 13px 0px 12px;
+    }
+    #Rightloan {
+        padding: 62px 0px;
+    }
+    #Peoplesays{
+        padding: 66px 0px;
+    } 
+    #Footer #footer-div {
+        padding-left: 0px;
+    }
+    #Footer .first-div .footer-inner-div h5 {
+        text-align: left;
+        margin-left: 0px;
+    }
+    #Footer .email-input{
+        width: 89%;
+        margin-top: 4px;
+    }
+    #Footer .first-div .footer-inner-div .icon {
+        text-align: left;
+    }
+    #Rightloan .col-md-4>div{
+        margin: 9px 0px;
+        min-height: 337px;
+    }
+    #HeroForm{
+        padding: 25px 17px;
+        width: 100%;
+    }
+    #HeaderNav #hero p{
+        text-align: center;
+    }
+    #HeroForm h4{
+        text-align: center;
+    }
+    #HeaderNav #hero h1{
+        font-size: 49px;
+    }
+    #HeaderNav .d-flex{
+        justify-content: center;
+    }
+    #Peoplesays .col-md-4>div{
+        margin-right: 0rem;
+    }
+    #counter #counterSec .col-md-4>div{
+        padding: 16px;
+       min-height: 336px;
+    }
+    #Footer .second-span {
+        padding-left: 30px;
+    }
+    #Footer .footer-inner-div ul li a i.bi-geo-alt {
+        font-size: 16px;
+        padding-right: 6px;
+    }
+    #Footer .footer-inner-div ul li a i.bi-envelope {
+        font-size: 16px;
+        padding-right: 0px;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    #HeaderNav nav{
+        padding: 17px 15px;
+    }
+    #HeaderNav #hero .para-one {
+    padding: 0px 2px 0px 8px;
+}
+#HeaderNav #hero h1{
+    font-size: 33px;
+    line-height: 47px;
+    text-align: center;
+}
+#HeaderNav{
+    padding-top: 177px;
+}
+#HeroForm{
+    width: 100%;
+    padding: 25px 12px;
+}
+#HeroForm h4{
+    text-align: center;
+}
+#HeaderNav #hero p{
+    text-align: center;
+    font-size: 20px;
+}
+#Howitworks {
+    padding: 3rem 0;
+}
+#Rightloan {
+    padding: 37px 0px;
+}
+#Rightloan h2{
+    font-size: 29px;
+    line-height: 39px;
+}
+#Rightloan .col-md-12 p{
+    padding: 1rem 0rem;
+}
+#Rightloan .col-md-4>div{
+    margin: 20px 0px;
+}
+#Rightloan .col-md-4 h4{
+    font-size: 25px;
+}
+#Peoplesays{
+    padding: 45px 3px;
+}
+#Peoplesays h2{
+    font-size: 29px;
+    line-height: 39px;
+}
+#Team {
+    padding: 2rem 0;
+}
+#Team h2{
+    font-size: 29px;
+    line-height: 39px;
+    padding-bottom: 1rem;
+}
+#counter #counterSec .col-md-4>div{
+    margin: 11px 0;
+}
+.text-center {
+    padding-bottom: 26px;
+    padding-top: 50px;
+}
+#Footer .footer-inner-div{
+text-align: center;
+}
+#Footer #footer-div {
+    padding-left: 0px;
+    padding-top: 28px;
+}
+#Footer .first-div .footer-inner-div h5{
+    margin-left: 0px;
+}
+#Footer .first-div .footer-inner-div .icon {
+    text-align: center;
+}
+#Footer .email-div {
+    text-align: center;
+    padding-top: 28px;
+}
+#Footer .first-div{
+    padding-top: 28px;
+}
+#Footer .footer-inner-div h5{
+    padding-bottom: 31px;
+}
+#Footer .email-input{
+    float: none;
+    width: 100%;
+}
+#Footer .footer-btm{
+    text-align: center;
+    padding-top: 0px;
+}
+#Footer #footer-btm-two{
+    text-align: center;
+}
+#HeaderNav nav .call-flex{
+    display: unset;
+    text-align: center;
+}
+#HeaderNav .d-flex{
+justify-content: center;
+}
+#HeaderNav nav .nav-item .nav-link{
+    text-align: center;
+}
+#Howitworks h2{
+    font-size: 29px;
+    line-height: 24px;
+}
+}
+@media only screen and (min-width: 1025px) and (max-width: 1182px){
+    #HeaderNav nav .call-flex {
+        margin-right: 66px;
+    }
+    #HeaderNav nav{
+        padding: 17px 27px;
+    }
+    #HeaderNav #hero .para-one {
+        padding: 0px 13px 0px 35px;
+    }
+    #HeroForm{
+        width: 95%;
+    }
+    #Rightloan {
+        padding: 62px 0px;
+    }
+    #Rightloan .col-md-4>div{
+        margin: 20px 0px;
+    }
+    #Peoplesays{
+        padding: 66px 3px;
+    }
+    #Footer #footer-div {
+        padding-left: 18px;
+    }
+}
+
+

@@ -32,9 +32,9 @@
 <body>
     <header>
         <section id="HeaderNav">
-            <video autoplay loop muted plays-inline class="back-Video">
+            <!-- <video autoplay loop muted plays-inline class="back-Video">
                 <source src="./assets/img/pexels-kindel-media-6774646.mp4">
-            </video>
+            </video> -->
             <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
@@ -46,7 +46,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
@@ -60,19 +60,27 @@
                                 <a class="nav-link ">Contacts</a>
                             </li>
                         </ul>
-                        <div class="d-flex">
+                        <div class="call-flex">
                             <div>
-
+                                <i class="bi bi-telephone-minus"></i>
                             </div>
-                            <div><a href="#"><button class="btn">LOGIN</button></a></div>
+                            <div>
+                                <p>Need Help? Call us!</p>
+                                <p>+1-202-555-0132</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="btn-login">
+                                <a href="#"><button class="btn">LOGIN</button></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </nav>
-            <div class="container" id="hero">
+            <div class="container-fluid" id="hero">
                 <div class="row">
                     <div class="col-md-6">
-                        <div>
+                        <div class="para-one">
                             <h1><span>Invest</span> in Your Dreams with Our <span>Funding's</span></h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua.</p>
@@ -178,7 +186,7 @@
         </div>
     </section>
     <section id="Rightloan">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <h2>find the right loan for your growth</h2>
@@ -238,7 +246,7 @@
             </div>
     </section>
     <section id="Peoplesays">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <div>
@@ -434,55 +442,97 @@
             </div>
         </div>
     </section>
-    <section id="Footer">
-        <video autoplay loop muted plays-inline class="Footer-Video">
+     <section id="Footer">
+        <!-- <video autoplay loop muted plays-inline class="Footer-Video">
             <source src="./assets/img/money-transfer-49049.mp4">
-        </video>
-        <div class="container">
+        </video> -->
+        <div class="container" id="hero-one">
+            
             <div class="row">
                 <div class="col-md-12">
                     <div class="text-center"><img src="./assets/img/Logo.png" class="img-fluid" alt=""></div>
                 </div>
-                <div class="col">
-                    <div>
-                        <h5>Company</h5>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Loans</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </div>
-
                 </div>
-                <div class="col">
-                    <div>
-                        <h5>Services</h5>
-                        <ul>
-                            <li><a href="#">Personal Funding</a></li>
-                            <li><a href="#">Term Loan</a></li>
-                            <li><a href="#">Equipment Finance</a></li>
-                            <li><a href="#">Line of Credit</a></li>
-                            <li><a href="#">Invoice Financing</a></li>
-                            <li><a href="#">Short Term Loan</a></li>
-                        </ul>
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="footer-inner-div">
+                            <h5>Company</h5>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Loans</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+    
+                    </div>
+                    <div class="col-md-2">
+                        <div class="footer-inner-div" id="footer-div">
+                            <h5>Services</h5>
+                            <ul>
+                                <li><a href="#">Personal Funding</a></li>
+                                <li><a href="#">Term Loan</a></li>
+                                <li><a href="#">Equipment Finance</a></li>
+                                <li><a href="#">Line of Credit</a></li>
+                                <li><a href="#">Invoice Financing</a></li>
+                                <li><a href="#">Short Term Loan</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="first-div">
+                        <div class="footer-inner-div">
+                            <h5>Contact Us</h5>
+                            <ul class="icon">
+                                <li><a href="#"><i class="bi bi-geo-alt"></i>718 Rd 
+                                    California, 31124</a></li>
+                                <li><a href="#"><i class="bi bi-envelope"></i>Info@getmefunded.com</a></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="email-div">
+                        <div class="footer-inner-div">
+                           <h5 class="follow-para">Follow us</h5>
+                        </div>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                    </div>
+                    <div class="mb-3 email-input">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" fdprocessedid="3s9oee">
+                        <button type="submit" class="btn btn-primary btn-submit" fdprocessedid="36ud28">Subscribe</button>
+                      </div>
+                    <!-- <div class="input-div">
+                    <input type="email" name="" id="" placeholder="Email">
+                </div>
+                <div class="btn-email">
+                    <button><a href="">Subscribe</a></button>
+                </div> -->
                     </div>
                 </div>
-                <div class="col">
-                    <div>
-                        <h5>Contact Us</h5>
-                        <ul>
-                            <li><a href="#"><i class="bi bi-geo-alt"></i>718 Rd 
-                                California, 31124</a></li>
-                            <li><a href="#"><i class="bi bi-envelope"></i>Info@getmefunded.com</a></li>
-                        </ul>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer-btm">
+                            <p>© 2023 All Rights Reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-btm" id="footer-btm-one">
+                            <p>Design & Developed by <span><b>NukesLab</b></span></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-btm" id="footer-btm-two">
+                            <p>Privacy Policy<span class="second-span">Terms of Use</span></p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-5"></div>
             </div>
         </div>
-    </section>
-
+    </section> 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
