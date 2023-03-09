@@ -1,0 +1,751 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Get Me Funded</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- stylesheet css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- stylesheet css -->
+    <!-- google font sans pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <!-- google font sans pro -->
+    <!-- bootstrap icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- bootstrap icon CDN -->
+    <!-- slick-carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- slick-carousel -->
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+:root{
+    --primary-color:#02044A;
+    --secondery-color:#25CC88;
+    --shadow-color:#9d9fb3; 
+}
+
+body{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    
+}
+
+
+.form__container{
+    margin-top: 4rem;
+    border-radius: 2rem;
+    padding: 120px;
+}
+
+.title__container{
+    width: 100%;
+    height: 4.5rem;
+    padding: 0.6rem 1.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #42434e;
+}
+
+.title__container h1{
+    letter-spacing: 2px;
+    color: white;
+    font-size: 1.25rem;
+    margin-bottom: 0.4rem;
+}
+
+.title__container p{
+    color: var(--shadow-color);
+    font-size: 0.75rem;
+}
+.body__container{
+    display: flex;
+
+}
+
+.left__container{
+    width: 38%;
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid #42434e;
+    padding: 8.25rem 0;
+    padding-right: 1.8rem;
+    background-color: #D7DDD0;
+}
+
+.side__titles{
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-right: 0.6rem; */
+}
+
+.title__name{
+    padding: 0.9rem 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+.title__name h3{
+    /* margin-bottom: 0.20rem; */
+    /* color: #ffffff;
+    font-size: 0.8rem;
+    letter-spacing: 1px; */
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: #011F3B;
+}
+.title__name p{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #011F3B;
+}
+
+.progress__bar__container{
+    padding-top:0.6rem ;
+    /* height: 100%; */
+}
+.progress__bar__container ul .active{
+    background-color: #011F3B;
+
+}
+
+.progress__bar__container ul li{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    list-style: none;
+    background: var(--shadow-color);
+    padding: 0.5rem 0.6rem;
+    margin-bottom: 5.2rem;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-left:2rem ;
+}
+
+.progress__bar__container ul li:nth-child(2)::before{
+    content: '';
+    width: 3px;
+    height: 70px;
+    top: 514px;
+    position: absolute;
+    background-color: var(--shadow-color);
+}
+
+.progress__bar__container ul li:nth-child(1).active::before{
+    content: '';
+    width: 3px;
+    height: 70px;
+    top: 382px;
+    position: absolute;
+    background-color: #000000;
+    /* z-index: -1; */
+}
+.progress__bar__container ul li:nth-child(2).active::before{
+    content: '';
+    width: 3px;
+    height: 70px;
+    top: 514px;
+    position: absolute;
+    background-color: #000000;
+    /* z-index: -1; */
+}
+
+
+.right__container{
+    width: 65%;
+    display: flex;
+    padding: 130px 94px 235px 58px;
+    background-color: #011F3B;
+}
+.right__container fieldset{
+    border: none;
+}
+.sub__title__container{
+    padding: 1rem 0 1.2rem 0;
+    border-bottom: 1px solid #42434e;
+}
+
+.sub__title__container h2{
+    font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+color: #A6F340;
+margin-bottom: 22px;
+}
+
+.sub__title__container p{
+    font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 26px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.active__form{
+    display: none;
+}
+
+.input__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.input__container label{
+    color: #ffffff;
+    font-size: 0.75rem;
+    margin-bottom: 0.4rem;
+}
+.input__container input{
+    
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    border-radius: 0.75rem;
+    background: none;
+    border: 1px solid var(--secondery-color);    
+    margin-bottom: 1.2rem;
+    outline: none;
+    color: #ffffff;
+}
+
+.nxt__btn{
+    width: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0;
+    background: #A6F340;
+    color: #ffffff;
+    font-family: 'Source Sans Pro';
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 26px;
+    text-transform: capitalize;
+}
+
+.nxt__btn:hover{
+    transform: scale(1.03);
+    background:#1cd68c ;
+    cursor: pointer;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* float: right; */
+    margin:0;
+    padding: 0;
+    /* justify-content:space-evenly; */
+}
+
+.prev__btn{
+    margin: 0;
+    /* padding: 0.5rem 1.5rem 0.7rem 1.5rem  ; */
+    /* background-color: #857373; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    /* margin-right: 20px; */
+    /* margin-left: 15rem; */
+    cursor: pointer;
+}
+
+/*------------------------------- form-2 design --------------------*/
+
+.selection{
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--shadow-color);
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.selection:hover{
+    border: 1px solid var(--secondery-color);
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.imoji{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem 0.4rem;
+    margin:0  0.2rem ;
+    margin-right: 0.4rem;
+    font-size: 2rem;
+    font-weight: 900;
+    color: yellow;
+    border-radius: 50%;
+    background: var(--shadow-color);
+}
+
+
+.descriptionTitle h3{
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+.descriptionTitle p{
+    font-size: 0.75rem;
+    color: var(--shadow-color);
+}
+
+
+/*-------------------------------------- form-4 design----------------------------------------- */
+.slider{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    -webkit-appearance: none;
+  appearance: none;
+  width: 100%; 
+  height: 0.75rem;
+  background: #d3d3d3; 
+  outline: none; 
+  opacity: 0.7; 
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  position: relative;
+  margin-top: 3rem;
+  /* margin-right:5rem ; */
+}
+
+
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px; 
+    height: 25px; 
+    border-radius: 50%;
+    background: var(--secondery-color);
+    cursor: pointer; 
+    position: relative;
+}
+
+.slider::-webkit-range-thumb {
+    width: 50px; 
+    height: 50px;
+    background: var(--secondery-color);
+    cursor: pointer;
+    position: relative;
+}
+
+.output__value{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#ffffff;
+    border-radius: 2em;
+    padding: 0.8rem 0.8rem;
+    position: absolute;
+    background-color:var(--secondery-color);    
+}
+
+.output__value::after{
+    content: '';
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: black;
+    transform: rotate(45deg);
+    position: absolute;
+    margin-top:40px;
+    background-color: var(--secondery-color);
+}
+.btn-Excellent{
+    padding: 13px 55px;
+    background-color: transparent;
+    border: 1px solid #B8B8B8;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+.finan-btn{
+    display: flex;
+    margin-top: 30px;
+}
+.finan-btn :nth-child(1){
+    margin-right: 15px;
+}
+.progress__bar__container ul li{
+    color: #A6F340 !important;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: var(--primary-color);
+    }
+    .form__container{
+        margin: 0;
+        padding: 0;
+    }
+
+    .body__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .right__container{
+        width: 90%;
+        margin: 0;
+    }
+    .title__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+       
+    }
+
+    .left__container{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    .buttons{
+        justify-content: space-between;
+    }
+    
+    .descriptionTitle h3{
+        font-size: 1rem;
+    }
+    .descriptionTitle p{
+        font-size: 0.6rem;
+
+    }
+    
+    
+    .side__titles{
+        flex-direction: row;
+        /* align-items: center;  */
+        justify-content: space-evenly;
+    }
+    .title__name h3{
+        font-size: 0.75rem;
+
+    }
+    .title__name p{
+        font-size: 0.5rem;
+
+    }
+
+    .progress__bar__container{
+        margin-bottom: 0;
+
+    }
+    .progress__bar__container ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+        /* width: 50%; */
+        padding: 0 2rem;
+        
+    }
+
+    .progress__bar__container ul ::before{
+        height: 5vh;
+    }
+    .progress__bar__container ul li{
+        margin: 10px;
+        padding: 10px ;
+        /* transform: rotate(90deg); */
+    }
+    .progress__bar__container ul .active::before{
+        transform: rotate(90deg);
+    }
+    .progress__bar__container ul li:nth-child(1).active::before{
+        width: 2px;
+    height: 13px;
+    left: 184px;
+    }
+    
+}
+</style>
+
+</head>
+
+
+
+<body>
+
+    <div class="form__container">
+        <!-- <div class="title__container">
+            <h1>Example UI container</h1>
+            <p>Follow the 4 simple steps to complete your mapping</p>
+        </div> -->
+        <div class="body__container">
+            <div class="left__container">
+                
+                <div class="progress__bar__container">
+                    <ul>
+                        <li class="active" id="icon1" class="one-icon">1</li>
+                        <li id="icon2" class="one-icon">2</li>
+                        <li id="icon3" class="one-icon">3</li>
+                        <!-- <li id="icon4"><ion-icon name="pricetag-outline"></ion-icon></li>
+                        <li id="icon5"><ion-icon name="mail-outline"></ion-icon></li> -->
+                    </ul>
+                </div>
+
+                <div class="side__titles">
+                    <div class="title__name">
+                        <h3>Financial Information</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="title__name">
+                        <h3>Business Information</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="title__name">
+                        <h3>Personal Information</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <!-- <div class="title__name">
+                        <h3>Budget</h3>
+                        <p>Select & press next</p>
+                    </div>
+                    <div class="title__name">
+                        <h3>Complete</h3>
+                        <p>Finaly press submit</p>
+                    </div> -->
+                </div>
+            </div>
+            <div class="right__container">
+                <fieldset id="form1">
+                    <div class="sub__title__container ">
+                        <p>Financial information</p>
+                        <h2>What is your credit score?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                    </div>
+                    <div class="finan-btn">
+                         <div><button type="button" class=" btn-Excellent">excellent (720+)</button></div>
+                         <div><button type="button" class=" btn-Excellent">excellent (720+)</button></div>
+                    </div>
+                    <div class="finan-btn">
+                        <div><button type="button" class=" btn-Excellent">excellent (720+)</button></div>
+                        <div><button type="button" class=" btn-Excellent">excellent (720+)</button></div>
+                   </div>
+                   <div class="finan-btn">
+                    <div><button type="button" class=" btn-Excellent">excellent (720+)</button></div>
+                    </div>
+                    
+                    <div class="input__container">
+                        <!-- <label for="name">Enter your name</label>
+                        <input type="text"> -->
+                        <a class="nxt__btn" onclick="nextForm();"> Next</a>
+                    </div>
+                </fieldset>
+                <fieldset class="active__form" id="form2">
+                    <div class="sub__title__container">
+                        <p>Step 2/5</p>
+                        <h2>What best describes you ?</h2>
+                        <p>Please let us know what type of business best describes you as entreprenuer or businessman.</p>
+                    </div>
+                    
+                    <div class="input__container">
+                        <div class="selection newB">
+                            <div class="imoji">
+                                <ion-icon name="happy"></ion-icon>
+                                
+                            </div>
+                            <div class="descriptionTitle">
+                                <h3>New Business</h3>
+                                <p>Started trading in last 12 months</p>
+                            </div>
+                        </div>
+                        <div class="selection exitB">
+                            <div class="imoji">
+                                <ion-icon name="business"></ion-icon>
+                            </div>
+                            <div class="descriptionTitle">
+                                <h3>Existing Business</h3>
+                                <p>Have been operating beyond 12 months</p>
+                            </div>
+                        </div>
+                        
+                        <div class="buttons">
+                            <a class="prev__btn" onclick="prevForm();" >Back</a>
+                            <a class="nxt__btn"  onclick="nextForm();" >Next</a>    
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="active__form" id="form3">
+                    <div class="sub__title__container">
+                        <p>Step 3/5</p>
+                        <h2>What service are looking for ?</h2>
+                        <p>Please let us know what type of business best describes you as entreprenuer or businessman.</p>
+                    </div>
+                    
+                    <div class="input__container">
+                        <div class="selection newB">
+                            <div class="imoji">
+                                <ion-icon name="desktop"></ion-icon>
+                                
+                            </div>
+                            <div class="descriptionTitle">
+                                <h3>Website Development</h3>
+                                <p>Development of online websites</p>
+                            </div>
+                        </div>
+                        <div class="selection exitB">
+                            <div class="imoji">
+                                <ion-icon name="phone-portrait"></ion-icon>
+                            </div>
+                            <div class="descriptionTitle">
+                                <h3>Development of Mobile App</h3>
+                                <p>Development of android and IOS mobile app</p>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <a class="prev__btn" onclick="prevForm();" >Back</a>
+                            <a class="nxt__btn"  onclick="nextForm();" >Next</a>    
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="active__form" id="form4">
+                    <div class="sub__title__container">
+                        <p>Step 4/5</p>
+                        <h2>Please select your budget</h2>
+                        <p>Please let us know budget for your project so yes are great that we can give the right quote thanks</p>
+                    </div>
+                    
+                    <div class="input__container">
+                        
+                        
+                        <input type="range" min="10000" max="500000" value="250000" class="slider">
+                        <div class="output__value">
+                            
+                        </div>
+                        
+                        <div class="buttons">
+                            <a class="prev__btn" onclick="prevForm();" >Back</a>
+                            <a class="nxt__btn"  onclick="nextForm();" >Next</a>     
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="active__form" id="form5">
+                    <div class="sub__title__container">
+                        <p>Step 5/5</p>
+                        <h2>Complete Submission</h2>
+                        <p>Thanks for completing the form and for your time.Plss enter your email below and submit the form</p>
+                    </div>
+                    
+                    <div class="input__container">
+                        <label for="Email">Enter your email</label>
+                        <input type="text">
+                        <div class="buttons">
+                            <a class="prev__btn"  onclick="prevForm();" >Back</a>
+                            <a class="nxt__btn" id="submitBtn" onclick="nextForm();" >Next</a>    
+                        </div>
+                        
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
+    <script src="assets/js/wizar.js"> </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('#LOgoTeam').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/counter.js"></script>
+</body>
+
+</html>
